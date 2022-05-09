@@ -1,0 +1,38 @@
+  
+  
+  #conatiner {
+    display: block;
+    width: 40%;
+    height: 350px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  #name {
+    margin-bottom: 20px;
+  }
+  
+  #email {
+    margin-bottom: 20px;
+  }
+  
+  #password {
+    margin-bottom: 20px;
+  }
+  
+  #submit {
+    width: 50%;
+    height: 50px;
+  }
+  
+  
+  a {
+    color: black;
+    margin-left: 10px;
+  }
+  

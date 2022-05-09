@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="abc.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="conatiner">
+      <h1>Log In</h1>
+      <form id="loginform">
+        <input id="email" type="email" placeholder="Email" />
+        <br>
+        <input id="password" type="password" placeholder="Password" />
+
+        <div><input id="submit" type="submit" value="LOG IN" /></div>
+      </form>
+
+     
+    </div>
+  </body>
+</html>
+
+<script>
+  var count = 0;
+
+  var arr = JSON.parse(localStorage.getItem("sigma"));
+
+  document.querySelector("#loginform").addEventListener("submit", login);
+
+  function login() {
+    event.preventDefault();
+
+    var useremail = loginform.email.value;
+
+    var userpassword = loginform.password.value;
+
+
+    arr.forEach(function (el) {
+      if (el.Email == useremail && el.Password == userpassword) {
+        count++;
+      }
+    });
+
+    if (count > 0) {
+      alert("Login Successful");
+    } else {
+      alert("Incorrect Email or Password");
+    }
+
+    window.location.reload();
+  }
+</script>
